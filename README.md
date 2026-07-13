@@ -1,5 +1,5 @@
 # service-d
 
-A native Supabase CLI project that is also a Henosis component. Continue using the ordinary
-`supabase` CLI workflow; `henosis.toml` only marks the component and identifies its owned schema
-and graph dependencies.
+A Henosis Supabase component authored in `henosis.ts`, with native SQL migrations retained under
+`supabase/migrations`. The TypeScript definition owns the schema, PostgREST exposure, and anonymous
+access policy; Henosis reads and checksums the SQL files without copying them.

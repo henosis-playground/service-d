@@ -1,0 +1,16 @@
+{
+  "name": "@henosis/service-d",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@henosis/platform-supabase": "github:henosis-playground/platform#d2208b2&path:packages/platform-supabase"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.3.0"
+}

@@ -1,0 +1,34 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@henosis/platform-supabase':
+        specifier: github:henosis-playground/platform#d2208b2&path:packages/platform-supabase
+        version: https://codeload.github.com/henosis-playground/platform/tar.gz/d2208b21e66b7026c596dba608214786b97a29b9#path:packages/platform-supabase
+    devDependencies:
+      typescript:
+        specifier: 5.9.3
+        version: 5.9.3
+
+packages:
+
+  '@henosis/platform-supabase@https://codeload.github.com/henosis-playground/platform/tar.gz/d2208b21e66b7026c596dba608214786b97a29b9#path:packages/platform-supabase':
+    resolution: {gitHosted: true, path: packages/platform-supabase, tarball: https://codeload.github.com/henosis-playground/platform/tar.gz/d2208b21e66b7026c596dba608214786b97a29b9}
+    version: 0.0.0
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@henosis/platform-supabase@https://codeload.github.com/henosis-playground/platform/tar.gz/d2208b21e66b7026c596dba608214786b97a29b9#path:packages/platform-supabase': {}
+
+  typescript@5.9.3: {}
