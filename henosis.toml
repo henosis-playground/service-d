@@ -1,3 +1,0 @@
-api_version = "henosis.dev/supabase-component/v1"
-schema = "service_d"
-depends_on = []
