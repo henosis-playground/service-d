@@ -3,14 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": { ".": "./henosis/src/service-d.ts" },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run henosis/test/service-d.test.ts"
   },
   "dependencies": {
-    "@henosis/platform-supabase": "github:henosis-playground/platform#d2208b2&path:packages/platform-supabase"
+    "@henosis/core": "file:../platform/packages/core",
+    "@henosis/platform-supabase": "file:../platform/packages/platform-supabase"
   },
   "devDependencies": {
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
   },
   "packageManager": "pnpm@11.3.0"
 }
