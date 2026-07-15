@@ -1,8 +1,14 @@
-import { defineComponent, output, value } from "@henosis/core";
+import { config, defineComponent, output, value } from "@henosis/core";
 import { migration, schema } from "@henosis/platform-supabase";
 
 export default defineComponent({
   name: "service-d",
+  files: [
+    config.file("supabase/migrations/20260713013134_create_items.sql", "sha256:7d07c5ae1c3b9ff728c3259ea4d4d8160bfe4caced75df6a54a959b15dbc0012"),
+    config.file("supabase/migrations/20260713063000_seed_items.sql", "sha256:33902fae59903aff00d16ac16eadd9c3523497811f65f1b993a7c9163d714a98"),
+    config.file("supabase/migrations/20260713064000_default_anon_read.sql", "sha256:106b2a0db6d2084d74a24bad1bdba7431393c1c037b249d92b5aa09de25f9296"),
+    config.file("supabase/migrations/20260713065000_reassert_anon_read.sql", "sha256:106b2a0db6d2084d74a24bad1bdba7431393c1c037b249d92b5aa09de25f9296"),
+  ],
   outputs: {
     restUrl: output.observed(value.url()),
     schema: output.observed(value.string()),
