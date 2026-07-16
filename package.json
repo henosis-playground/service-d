@@ -5,16 +5,14 @@
   "type": "module",
   "exports": { ".": "./henosis/src/service-d.ts" },
   "scripts": {
-    "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run henosis/test/service-d.test.ts"
+    "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "@henosis/core": "file:../platform/packages/core",
     "@henosis/platform-supabase": "file:../platform/packages/platform-supabase"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
-    "vitest": "4.1.10"
+    "typescript": "5.9.3"
   },
   "packageManager": "pnpm@11.3.0"
 }
